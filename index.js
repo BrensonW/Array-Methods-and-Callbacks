@@ -49,9 +49,9 @@ console.log(getYears(filter()));
 
 
 /* Task 4: Implement a higher-order function called `getWinners`, that accepts the callback function `getFinals()` and determine the winner (home or away) of each `finals` game. Return the name of all winning countries in an array called `winners` */ 
-function getWinners(callback){
+function getWinners(getFinals){
 let winners = [];
-callback.forEach(element =>{
+getFinals.forEach(element =>{
     if(element['Away Team Goals'] > element['Home Team Goals']){
         winners.push(element['Away Team Name']);
     } 
