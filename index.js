@@ -79,7 +79,7 @@ for(let i = 0; i <= getYears.length; i++){
   
 
 }
-//return winnerEachYear
+
 };
 
 getWinnersByYear(getWinners(filter(fifaData)),  getYears(filter(fifaData)));
