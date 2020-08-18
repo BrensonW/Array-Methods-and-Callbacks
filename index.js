@@ -57,7 +57,7 @@ callback.forEach(element =>{
     } 
     else if (element['Away Team Goals'] <= element['Home Team Goals']){
         winners.push(element['Home Team Name']);
-    } // had to add the <= in else if because 2 of the years it was tie on the team goals but online says a certain team won because of penalty.
+    } // had to add the <= in else if because 2 of the years it was tie on the team goals but online says a certain team won because of penalty, plus if it wasn't added it makes task 5 wig out and put wrong team on wrong year.
 })
 return winners;
 };
