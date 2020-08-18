@@ -103,16 +103,16 @@ Hint: Investigate your data to find "team initials"!
 Hint: use `.reduce` */
 
 function getCountryWins(data, TeamInitials) {
-    let NumWins = 0;
+    let numberOfWins = 0;
     data.forEach(element =>{
         if (element["Away Team Goals"] >  element["Home Team Goals"] && element["Away Team Initials"] == TeamInitials){
-            NumWins+=1;         
+            numberOfWins+=1;         
         }
         else if (element["Away Team Goals"] <  element["Home Team Goals"]&& element["Home Team Initials"] == TeamInitials){
-            NumWins+=1;
+            numberOfWins+=1;
         }
     })
-    return `The team ${TeamInitials} has won ${NumWins} finals.`;
+    return `The team ${TeamInitials} has won ${numberOfWins} finals.`;
 
 };
 
